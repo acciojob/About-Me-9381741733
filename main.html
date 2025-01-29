@@ -1,1 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Profile Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
 
+    body {
+      background-color: #f7f7f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .profile-container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 900px;
+      width: 100%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h2, h3 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    section {
+      margin-bottom: 20px;
+    }
+
+    .about-me {
+      margin-bottom: 20px;
+    }
+
+    .skills {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .skill {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .skill-bar {
+      background-color: #ddd;
+      width: 70%;
+      height: 10px;
+      position: relative;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .skill-fill {
+      height: 100%;
+      background-color: #007bff;
+      border-radius: 5px;
+    }
+
+    img.profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-container">
+    <section id="name">
+      <h2>Name</h2>
+      <p>Shubham Bhola</p>
+    </section>
+
+    <section id="email">
+      <h2>Email</h2>
+      <p>abcdef796@gmail.com</p>
+    </section>
+
+    <section id="profile">
+      <h2>Profile</h2>
+      <p>Software Developer</p>
+    </section>
+
+    <section id="about-me">
+      <h2>About me</h2>
+      <p>I am a self-starter with a passion to adapt and evangelize new technologies. I have a passion for software development with a diverse skill set ranging from the MERN stack to a stronghold on data structures and algorithms. I like to tackle complex challenges head-on to deliver technically sound solutions with optimum efficiency.</p>
+      <p>I believe that magic is possible with a blend of imagination, hard work, and passion. Most of all, I believe in determination and honest efforts to enhance my skills in order to contribute to the growth of society.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill">
+          <span>React</span>
+          <div class="skill-bar"><div class="skill-fill" style="width: 95%;"></div></div>
+        </div>
+        <div class="skill">
+          <span>NodeJS & MongoDB</span>
+          <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+        </div>
+        <div class="skill">
+          <span>C/C++ & Python</span>
+          <div class="skill-bar"><div class="skill-fill" style="width: 99%;"></div></div>
+        </div>
+        <div class="skill">
+          <span>AWS & Hadoop</span>
+          <div class="skill-bar"><div class="skill-fill" style="width: 93%;"></div></div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
